@@ -87,6 +87,7 @@ jobs:
             RAILS_MASTER_KEY=${{ secrets.RAILS_MASTER_KEY }}
             SECRET_KEY_BASE=37ffae2b6695ba5ff7351362c8049c68474c8bd79a70db62cedfe28d942ff8f94d3681ad152da1c55946f4417ec8c0f381afebfd9b36a35742d0d2c511b433af
             RAILS_LOG_LEVEL=debug
+            PORT=3000
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
